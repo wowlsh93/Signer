@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="Signer" targetName="Signer" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e5734cfe-4e0d-490d-8285-25081eecfdfe" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="GkXRVZMW" />
+  </component>
+  <component name="ProjectId" id="1ZtOUJInzU6fkafmZFtsb4gWYCP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Signer" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="sign 2 4" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Signer" TARGET_NAME="Signer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Signer" RUN_TARGET_NAME="Signer">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e5734cfe-4e0d-490d-8285-25081eecfdfe" name="Default Changelist" comment="" />
+      <created>1585654937653</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585654937653</updated>
+      <workItem from="1585654939190" duration="6802000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="583" y="185" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585661539983">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="583" y="185" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1585661539983" />
+    <state width="491" height="685" key="DebuggerActiveHint" timestamp="1585661408819">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="491" height="685" key="DebuggerActiveHint/67.27.1853.1053@67.27.1853.1053" timestamp="1585661408819" />
+    <state width="1520" height="246" key="GridCell.Tab.0.bottom" timestamp="1585662824270">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1520" height="246" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1585662824270" />
+    <state width="1520" height="246" key="GridCell.Tab.0.center" timestamp="1585662824268">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1520" height="246" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1585662824268" />
+    <state width="1520" height="246" key="GridCell.Tab.0.left" timestamp="1585662824268">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1520" height="246" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1585662824268" />
+    <state width="1520" height="246" key="GridCell.Tab.0.right" timestamp="1585662824269">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1520" height="246" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1585662824269" />
+    <state width="1520" height="307" key="GridCell.Tab.1.bottom" timestamp="1585661482294">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1520" height="307" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1585661482294" />
+    <state width="1520" height="307" key="GridCell.Tab.1.center" timestamp="1585661482293">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1520" height="307" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1585661482293" />
+    <state width="1520" height="307" key="GridCell.Tab.1.left" timestamp="1585661482293">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1520" height="307" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1585661482293" />
+    <state width="1520" height="307" key="GridCell.Tab.1.right" timestamp="1585661482294">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1520" height="307" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1585661482294" />
+    <state x="694" y="27" width="862" height="1053" key="find.popup" timestamp="1585662135208">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="694" y="27" width="862" height="1053" key="find.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1585662135208" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.cpp</url>
+          <line>5</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
