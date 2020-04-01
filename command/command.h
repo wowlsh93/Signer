@@ -6,7 +6,8 @@
 #include <memory>
 #include <cstring>
 #include <assert.h>
-#include "util.h"
+#include "../crypto/signer.h"
+#include "../crypto/ed25519.h"
 
 #ifndef SIGNER_COMMAND_H
 #define SIGNER_COMMAND_H
@@ -18,45 +19,47 @@ namespace bos {
         virtual void execute() = 0;
     };
 
-    /***
-    command: ./signer sign $SEED $DATA
-    example: ./signer sign SDSBQZ7BD2XZZPEUFWS7WQGB7BFUI7TCH474S6C5OQTNBICD7AZ2FDN6 "I love BOSAGORA"
-    result: CED308BE013B95030752DD223F960DEC02735201F4E238274959ABA09C36D3542E01A0CBD2A342E349DD934A8D51564A08A8ADF9D92487E4D3362D83E9C6890D49206C6F766520424F5341474F5241
-    ***/
 
     class SignCommand : public Command {
+
         public:
             SignCommand(std::string opt1, std::string opt2):
                 _seed(opt1),
                 _data(opt2) {
+
+                _crypto = new bos::crypto::Ed25519();
+
             }
-            virtual void execute() {
-                std::cout << "SignCommand execute!!" << std::endl;
+            ~SignCommand(){
+                delete _crypto;
             }
+            virtual void execute();
         private:
             std::string _seed;
             std::string _data;
-    };
 
-    /***
-    command: ./signer verify $PUBLIC_KEY $SIGNATURE
-    example: ./signer verify GASG2JFZI4XKNQFF5FH2QGBXCROVJBNE43QNJWMXQQIDZZPYP3UVGTW6 CED308BE013B95030752DD223F960DEC02735201F4E238274959ABA09C36D3542E01A0CBD2A342E349DD934A8D51564A08A8ADF9D92487E4D3362D83E9C6890D49206C6F766520424F5341474F5241
-    result : bool
-     */
+            bos::crypto::Signer * _crypto;
+    };
 
 
     class VerifyCommand : public Command {
         public:
-         VerifyCommand(std::string opt1, std::string opt2):
+         VerifyCommand(std::string opt1, std::string opt2, std::string opt3):
              _pubkey(opt1),
-             _signature(opt2) {
+             _signature(opt2),
+             _data(opt3){
+             _crypto = new bos::crypto::Ed25519();
+
          }
-         virtual void execute() {
-             std::cout << "VerifyCommand execute!!" << std::endl;
-         }
+        ~VerifyCommand(){
+            delete _crypto;
+        }
+         virtual void execute();
         private:
             std::string _pubkey;
             std::string _signature;
+            std::string _data;
+            bos::crypto::Signer * _crypto;
     };
 
 
@@ -66,26 +69,32 @@ namespace bos {
     ***/
     class KeyPairCommand : public Command {
         public:
-         KeyPairCommand() {}
-
-         virtual void execute() {
-             std::cout << "KeyPairCommand execute!!" << std::endl;
+         KeyPairCommand() {
+             _crypto = new bos::crypto::Ed25519();
          }
 
+        ~KeyPairCommand(){
+            delete _crypto;
+        }
+
+         virtual void execute();
+
+        bos::crypto::Signer * _crypto;
     };
 
     class CommmandFactory {
         public:
          Command* operator()(const char** argv, int argc) {
+
              if(strcmp(argv[1],"sign") == 0){
                  assert(argc == 4);
                  return new SignCommand(argv[2], argv[3]);
              }
-             else if(argv[1] == "verify"){
-                 assert(argc == 4);
-                 return new VerifyCommand(argv[2], argv[3]);
+             else if(strcmp(argv[1],"verify") == 0){
+                 assert(argc == 5);
+                 return new VerifyCommand(argv[2], argv[3], argv[4]);
              }
-             else if(argv[1] == "keypair"){
+             else if(strcmp(argv[1] , "keypair") == 0){
                  return new KeyPairCommand();
              }
              else{

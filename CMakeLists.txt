@@ -3,4 +3,12 @@ project(Signer)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Signer main.cpp signer.cpp signer.h command.cpp command.h util.h)
+find_library(
+        LIBSODIUM
+        NAMES libsodium.so
+        HINTS /usr/lib /usr/lib64
+        REQUIRED)
+
+add_executable(Signer main.cpp crypto/signer.cpp crypto/signer.h command/command.cpp command/command.h util/util.h crypto/ed25519.cpp crypto/ed25519.h crypto/secp256k1.cpp crypto/secp256k1.h crypto/fpga.cpp crypto/fpga.h)
+
+target_link_libraries(${PROJECT_NAME} ${LIBSODIUM})

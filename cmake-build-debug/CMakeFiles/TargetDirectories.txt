@@ -1,3 +1,0 @@
-/home/hama/work/cpp/Signer/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/hama/work/cpp/Signer/cmake-build-debug/CMakeFiles/Signer.dir
-/home/hama/work/cpp/Signer/cmake-build-debug/CMakeFiles/edit_cache.dir
