@@ -13,6 +13,8 @@
 
 ### build
 <pre><code>
+ git clone https://github.com/wowlsh93/Signer.git
+ cd Signer
  mkdir build
  cd build
  cmake ..
