@@ -17,8 +17,8 @@ namespace bos::crypto {
         virtual ~Ed25519();
 
         void keypair();
-        bool sign(unsigned char *msg,unsigned int msg_len, const unsigned char *skey);
-        bool verify(unsigned char *sign, unsigned char *pkey, unsigned char *msg, unsigned int msg_len);
+        bool sign(unsigned char *msg,unsigned int msg_len,  unsigned char *skey);
+        bool verify(std::string sign, unsigned char *pkey, unsigned char *msg, unsigned int msg_len);
 
 
     private:

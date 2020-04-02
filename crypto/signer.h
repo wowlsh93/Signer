@@ -13,8 +13,8 @@ namespace bos::crypto {
     class Signer {
         public:
             virtual void keypair() = 0;
-            virtual bool sign(unsigned char *msg, unsigned int msg_len, const unsigned char *skey) = 0;
-            virtual bool verify(unsigned char *sign, unsigned char *pubkey, unsigned char *msg,  unsigned int msg_len) = 0;
+            virtual bool sign(unsigned char *msg, unsigned int msg_len,  unsigned char *skey) = 0;
+            virtual bool verify(std::string sign, unsigned char *pubkey, unsigned char *msg,  unsigned int msg_len) = 0;
 
     };
 }

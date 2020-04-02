@@ -4,6 +4,7 @@
 
 #include "ed25519.h"
 #include "../util/util.h"
+#include "../util/stella_format.h"
 
 namespace bos::crypto {
 
@@ -26,22 +27,21 @@ namespace bos::crypto {
         unsigned char sk[crypto_sign_SECRETKEYBYTES]; // (32U + 32U)
         crypto_sign_ed25519_seed_keypair(pk, sk, seed);
 
-
-        std::cout << "pk : " << bos::util::hexStr(pk, crypto_sign_PUBLICKEYBYTES) <<  std::endl;
-        //std::cout << "sk : " << bos::util::hexStr(sk, crypto_sign_SECRETKEYBYTES) <<  std::endl;
-        std::cout << "seed : " << bos::util::hexStr(seed, crypto_sign_SEEDBYTES) <<  std::endl;
-
-
+        bos::util::encodeStellaAddress(pk);
+        bos::util::endcodeStellaScreate(seed);
     }
 
-    bool Ed25519::sign(unsigned char *msg, unsigned int msg_len, const unsigned char *skey) {
+    bool Ed25519::sign(unsigned char *msg, unsigned int msg_len,  unsigned char *skey) {
 
         unsigned char sig[crypto_sign_BYTES];
+        unsigned char secrete[crypto_sign_SEEDBYTES];
+
+        bos::util::decodeStellaScreate(skey, secrete);
 
         int result = crypto_sign_ed25519_detached(sig, NULL, msg, msg_len, skey);
 
         if (result == 0){
-            std::cout << "signature : " << bos::util::hexStr(sig, crypto_sign_BYTES) <<  std::endl;
+            std::cout << "sign : " << bos::util::hexStr(sig, crypto_sign_BYTES) <<  std::endl;
         }
         else {
             std::cout << "sign fail" <<  std::endl;
@@ -50,9 +50,16 @@ namespace bos::crypto {
         return true;
     }
 
-    bool Ed25519::verify(unsigned char *sign, unsigned char *pkey, unsigned char *msg, unsigned int msg_len) {
+    bool Ed25519::verify(std::string sign_hex, unsigned char *pkey, unsigned char *msg, unsigned int msg_len) {
 
-        if (crypto_sign_ed25519_verify_detached(sign, msg, msg_len, pkey) != 0) {
+        unsigned char signature[crypto_sign_BYTES];
+        unsigned char address[crypto_sign_PUBLICKEYBYTES];
+
+        bos::util::hex2bin(sign_hex, signature);
+        bos::util::decodeStellaAddress(pkey, address);
+
+
+        if (crypto_sign_ed25519_verify_detached(signature, msg, msg_len, address) != 0) {
             std::cout << "verify fail!! " <<  std::endl;
             return false;
         }
