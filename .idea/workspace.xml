@@ -11,7 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5734cfe-4e0d-490d-8285-25081eecfdfe" name="Default Changelist" comment="">
+    <list default="true" id="e5734cfe-4e0d-490d-8285-25081eecfdfe" name="Default Changelist" comment="[ADD] seed -&gt; sk transform">
       <change afterPath="$PROJECT_DIR$/test.h" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/util/base32.cpp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/util/base32.h" afterDir="false" />
@@ -67,8 +67,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../stellar-core" />
-    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -78,7 +78,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Signer" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="verify GLCY5BDFM6537PURKTFT7HSKZSNY2P2C5W6JIOZLPHJ7MR4DEHAD2NYW  0fb9aba7f5862d055c07ef0b8480f1aeced669fe76858db1ddd6359a63f8976b41788b745d7ce1e967dd8f943a1375eba66213295131dd0e55fb523866e71d0d hello " PASS_PARENT_ENVS_2="true" PROJECT_NAME="Signer" TARGET_NAME="Signer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Signer" RUN_TARGET_NAME="Signer">
+    <configuration name="Signer" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="verify GIFNT3HWQMDYD7GLPBSNH43MSUKLDZS7ETCJVKV72HKEURTBXPAF5YLW aa8fd886e407b70b69007d92febdee37a56e10a6eb5df7a6794865b8e2f5c95dd4ad59396a5a8086d535bae9132a9305c18968c72fdfbcd7b5f4fc4e0719570a &quot;i love bosagora&quot;" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Signer" TARGET_NAME="Signer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Signer" RUN_TARGET_NAME="Signer">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -97,6 +97,7 @@
       <workItem from="1585654939190" duration="7078000" />
       <workItem from="1585724290503" duration="19891000" />
       <workItem from="1585797003121" duration="14058000" />
+      <workItem from="1585910460722" duration="3495000" />
     </task>
     <task id="LOCAL-00001" summary="1. skeleton">
       <created>1585663322067</created>
@@ -113,64 +114,78 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1. skeleton" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. skeleton" />
+    <MESSAGE value="[ADD] seed -&gt; sk transform" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ADD] seed -&gt; sk transform" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="273" y="269" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585812673206">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state x="171" y="119" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585913660742">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="171" y="119" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1585913660742" />
     <state x="273" y="269" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1585812673206" />
     <state x="623" y="229" width="649" height="615" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585749290995">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="623" y="229" width="649" height="615" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1585749290995" />
-    <state x="593" y="27" width="1053" height="1053" key="CommitChangelistDialog2" timestamp="1585751910810">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state x="436" y="0" width="1053" height="1053" key="CommitChangelistDialog2" timestamp="1585913863793">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="436" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1585913863793" />
     <state x="593" y="27" width="1053" height="1053" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1585751910810" />
-    <state width="532" height="685" key="DebuggerActiveHint" timestamp="1585807607855">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="454" height="537" key="DebuggerActiveHint" timestamp="1585912523667">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="454" height="537" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1585912523667" />
     <state width="532" height="685" key="DebuggerActiveHint/67.27.1853.1053@67.27.1853.1053" timestamp="1585807607855" />
-    <state x="726" y="257" width="524" height="594" key="FileChooserDialogImpl" timestamp="1585800414202">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state x="546" y="180" width="524" height="594" key="FileChooserDialogImpl" timestamp="1585913958677">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="546" y="180" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1585913958677" />
     <state x="726" y="257" width="524" height="594" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1585800414202" />
-    <state width="1797" height="523" key="GridCell.Tab.0.bottom" timestamp="1585813104222">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1483" height="197" key="GridCell.Tab.0.bottom" timestamp="1585913667362">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1483" height="197" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585913667362" />
     <state width="1797" height="523" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1585813104222" />
-    <state width="1797" height="523" key="GridCell.Tab.0.center" timestamp="1585813104221">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1483" height="197" key="GridCell.Tab.0.center" timestamp="1585913667362">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1483" height="197" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585913667362" />
     <state width="1797" height="523" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1585813104221" />
-    <state width="1797" height="523" key="GridCell.Tab.0.left" timestamp="1585813104220">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1483" height="197" key="GridCell.Tab.0.left" timestamp="1585913667361">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1483" height="197" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585913667361" />
     <state width="1797" height="523" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1585813104220" />
-    <state width="1797" height="523" key="GridCell.Tab.0.right" timestamp="1585813104222">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1483" height="197" key="GridCell.Tab.0.right" timestamp="1585913667362">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1483" height="197" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585913667362" />
     <state width="1797" height="523" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1585813104222" />
-    <state width="1751" height="313" key="GridCell.Tab.1.bottom" timestamp="1585807615106">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1483" height="247" key="GridCell.Tab.1.bottom" timestamp="1585912674743">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1483" height="247" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585912674743" />
     <state width="1751" height="313" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1585807615106" />
-    <state width="1751" height="313" key="GridCell.Tab.1.center" timestamp="1585807615105">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1483" height="247" key="GridCell.Tab.1.center" timestamp="1585912674743">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1483" height="247" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1585912674743" />
     <state width="1751" height="313" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1585807615105" />
-    <state width="1751" height="313" key="GridCell.Tab.1.left" timestamp="1585807615104">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1483" height="247" key="GridCell.Tab.1.left" timestamp="1585912674743">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1483" height="247" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1585912674743" />
     <state width="1751" height="313" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1585807615104" />
-    <state width="1751" height="313" key="GridCell.Tab.1.right" timestamp="1585807615105">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1483" height="247" key="GridCell.Tab.1.right" timestamp="1585912674743">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1483" height="247" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1585912674743" />
     <state width="1751" height="313" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1585807615105" />
-    <state x="493" y="84" key="SettingsEditor" timestamp="1585740011828">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state x="293" y="0" key="SettingsEditor" timestamp="1585913968612">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="293" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1585913968612" />
     <state x="493" y="84" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1585740011828" />
     <state x="620" y="215" width="1000" height="654" key="Vcs.Push.Dialog.v2" timestamp="1585751920893">
       <screen x="67" y="27" width="1853" height="1053" />
@@ -199,33 +214,38 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/test.h</url>
-          <line>108</line>
+          <line>123</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/test.h</url>
-          <line>133</line>
+          <line>148</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/test.h</url>
-          <line>159</line>
+          <line>174</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/test.h</url>
-          <line>172</line>
+          <line>187</line>
           <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/test.h</url>
-          <line>199</line>
-          <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/util/stella_format.cpp</url>
           <line>62</line>
           <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/test.h</url>
+          <line>56</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/test.h</url>
+          <line>47</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

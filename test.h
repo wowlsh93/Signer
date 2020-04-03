@@ -45,17 +45,32 @@ void test1() {
 
     unsigned char seed[crypto_sign_SEEDBYTES]; // (32U)
 
-    randombytes_buf(seed,sizeof seed);
+    std::cout << sizeof seed << std::endl;
+    randombytes_buf(seed, crypto_sign_SEEDBYTES);
+
+    std::cout << "random : " << hexStr5(seed, crypto_sign_SEEDBYTES + 32) <<  std::endl;
 
     unsigned char pk[crypto_sign_PUBLICKEYBYTES]; // 32U
     unsigned char sk[crypto_sign_SECRETKEYBYTES]; // (32U + 32U)
 
+
     crypto_sign_ed25519_seed_keypair(pk, sk, seed);
+
+//
+//    unsigned char seed3[32]; // (32U)
+//    for (int i = 0 ; i < 64 ; i++){
+//        seed3[i] = seed[i];
+//    }
+//
+//
+//    for (int i = 32 ; i < 64 ; i++){
+//        seed[i] = 0;
+//    }
 
 
     std::cout << "pk : " << hexStr5(pk, crypto_sign_PUBLICKEYBYTES) <<  std::endl;
     std::cout << "sk : " << hexStr5(sk, crypto_sign_SECRETKEYBYTES) <<  std::endl;
-    std::cout << "seed : " << hexStr5(seed, crypto_sign_SEEDBYTES) <<  std::endl;
+    std::cout << "seed : " << hexStr5(seed, crypto_sign_SEEDBYTES + 32) <<  std::endl;
 
 
     #define MESSAGE (const unsigned char *) "test"
@@ -197,14 +212,16 @@ void test3(){
     std::cout << "pk2 : " << hexStr5(pk2, crypto_sign_PUBLICKEYBYTES) <<  std::endl;
     std::cout << "seed2 : " << hexStr5(seed2, crypto_sign_SEEDBYTES) <<  std::endl;
 
-    unsigned char seed3[crypto_sign_SEEDBYTES]; // 32U
-    memcpy(&seed3[0], seed, 32);
+
+    unsigned char pk3[crypto_sign_PUBLICKEYBYTES]; // 32U
+    unsigned char sk3[crypto_sign_SECRETKEYBYTES]; // 64U
+    crypto_sign_ed25519_seed_keypair(pk3, sk3, seed2);
 
     #define MESSAGE (const unsigned char *) "test"
     #define MESSAGE_LEN 4
 
     unsigned char sig[crypto_sign_BYTES];
-    crypto_sign_ed25519_detached(sig, NULL, MESSAGE, MESSAGE_LEN, seed3);
+    crypto_sign_ed25519_detached(sig, NULL, MESSAGE, MESSAGE_LEN, seed2);
     if (crypto_sign_ed25519_verify_detached(sig, MESSAGE, MESSAGE_LEN, pk2) != 0) {
         std::cout << "verify fail!! " <<  std::endl;
     }

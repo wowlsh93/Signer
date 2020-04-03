@@ -37,8 +37,12 @@ namespace bos::crypto {
         unsigned char secrete[crypto_sign_SEEDBYTES];
 
         bos::util::decodeStellaScreate(skey, secrete);
+        unsigned char pk[crypto_sign_PUBLICKEYBYTES]; // 32U
+        unsigned char sk[crypto_sign_SECRETKEYBYTES]; // (32U + 32U)
 
-        int result = crypto_sign_ed25519_detached(sig, NULL, msg, msg_len, skey);
+        crypto_sign_ed25519_seed_keypair(pk, sk, secrete);
+
+        int result = crypto_sign_ed25519_detached(sig, NULL, msg, msg_len, sk);
 
         if (result == 0){
             std::cout << "sign : " << bos::util::hexStr(sig, crypto_sign_BYTES) <<  std::endl;
@@ -63,6 +67,8 @@ namespace bos::crypto {
             std::cout << "verify fail!! " <<  std::endl;
             return false;
         }
+
+        std::cout << "verify success!! " <<  std::endl;
 
         return true;
     }

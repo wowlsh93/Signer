@@ -11,7 +11,8 @@
 
 int main(int argc, const char** argv) {
 
-    testall();
+//    testall();
+
 
     bos::CommmandFactory command_factory;
     auto command = command_factory(argv,argc);
