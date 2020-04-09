@@ -4,15 +4,6 @@
 
 #include "command.h"
 
-void hex2bin2(const std::string& hex, uint8_t* data) {
-
-    for (unsigned int i = 0; i < hex.length(); i += 2) {
-        std::string byteString = hex.substr(i, 2);
-        (*data) = (char)strtol(byteString.c_str(), NULL, 16);
-        data += 1;
-    }
-}
-
 namespace bos {
 
     /***

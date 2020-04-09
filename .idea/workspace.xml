@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
-    <generated>
-      <config projectName="Signer" targetName="Signer" />
-    </generated>
+    <generated />
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
@@ -12,19 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5734cfe-4e0d-490d-8285-25081eecfdfe" name="Default Changelist" comment="[ADD] seed -&gt; sk transform">
-      <change afterPath="$PROJECT_DIR$/test.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/base32.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/base32.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/crc16.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/crc16.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/stella_format.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/stella_format.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/command/command.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/command/command.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypto/ed25519.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/crypto/ed25519.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypto/ed25519.h" beforeDir="false" afterPath="$PROJECT_DIR$/crypto/ed25519.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypto/signer.h" beforeDir="false" afterPath="$PROJECT_DIR$/crypto/signer.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +38,6 @@
     <expand />
     <select />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -78,7 +66,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Signer" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="verify GIFNT3HWQMDYD7GLPBSNH43MSUKLDZS7ETCJVKV72HKEURTBXPAF5YLW aa8fd886e407b70b69007d92febdee37a56e10a6eb5df7a6794865b8e2f5c95dd4ad59396a5a8086d535bae9132a9305c18968c72fdfbcd7b5f4fc4e0719570a &quot;i love bosagora&quot;" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Signer" TARGET_NAME="Signer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Signer" RUN_TARGET_NAME="Signer">
+    <configuration name="Signer" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="verify GIFNT3HWQMDYD7GLPBSNH43MSUKLDZS7ETCJVKV72HKEURTBXPAF5YLW aa8fd886e407b70b69007d92febdee37a56e10a6eb5df7a6794865b8e2f5c95dd4ad59396a5a8086d535bae9132a9305c18968c72fdfbcd7b5f4fc4e0719570a &quot;i love bosagora&quot;" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="Signer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="Signer">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -98,6 +86,7 @@
       <workItem from="1585724290503" duration="19891000" />
       <workItem from="1585797003121" duration="14058000" />
       <workItem from="1585910460722" duration="3495000" />
+      <workItem from="1586392550606" duration="141000" />
     </task>
     <task id="LOCAL-00001" summary="1. skeleton">
       <created>1585663322067</created>
@@ -207,11 +196,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>14</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/test.h</url>
           <line>123</line>
